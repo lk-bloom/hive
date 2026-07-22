@@ -1,7 +1,7 @@
 # Cross-pool idea exchange
 
 **pack:** `hive/agent-team-pools`  
-**poolPatternVersion:** `0.2`  
+**poolPatternVersion:** `0.3`  
 **See also:** [`PROMOTE-TO-WORKSTREAMS.md`](./PROMOTE-TO-WORKSTREAMS.md) · [`../ORCHESTRATION.md`](../ORCHESTRATION.md)
 
 Agents swap insight across domains **without** inventing a second job board.

@@ -5,7 +5,7 @@
 ## Always publishable
 
 - `ORCHESTRATION.md`, `HIVE-ROADMAP.md`, `GLOSSARY.md`, `CONTRIBUTING.md`, `LICENSE`, this file
-- Pattern doctrine + scaffolds (`master-build/`, `agent-team-pools/`)
+- Pattern doctrine + scaffolds (`master-build/`, `agent-team-pools/`, `agent-team-pools/persistent-research/`)
 - Doctrine ADRs (house style)
 - Distill / proposals templates
 - Smoke instances (docs-only)

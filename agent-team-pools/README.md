@@ -1,6 +1,6 @@
 # Agent Team Pools — home (hive)
 
-**poolPatternVersion:** `0.2`  
+**poolPatternVersion:** `0.3`  
 **Canonical doctrine:** [`POOL-PATTERN.md`](./POOL-PATTERN.md)  
 **Companion:** Master Build Pattern `0.5.1` ([`../master-build/MASTER-BUILD-PATTERN.md`](../master-build/MASTER-BUILD-PATTERN.md))  
 **Hive cold-start:** [`../ORCHESTRATION.md`](../ORCHESTRATION.md)
@@ -24,15 +24,18 @@ Then: the relevant `pools/<id>/` README + BRAIN-PROMPT / TEAMS.
 
 **Greenfield:** paste `MASTER-POOL-LEAD-PROMPT.md` with Admin path map (before pool lock).
 
+**Opt-in recurring research:** [`persistent-research/HOW-TO-PERSISTENT-RESEARCH.md`](./persistent-research/HOW-TO-PERSISTENT-RESEARCH.md).
+
 ---
 
 ## Layout
 
 | Path | What |
 |---|---|
-| [`POOL-PATTERN.md`](./POOL-PATTERN.md) | Doctrine v0.2 |
+| [`POOL-PATTERN.md`](./POOL-PATTERN.md) | Doctrine v0.3 |
 | [`PROMOTE-TO-WORKSTREAMS.md`](./PROMOTE-TO-WORKSTREAMS.md) | Admin Brain → job board |
 | [`IDEA-EXCHANGE.md`](./IDEA-EXCHANGE.md) | Cross-pool idea swap (Horizon 2) |
+| [`persistent-research/`](./persistent-research/) | Opt-in Persistent Research Kit |
 | [`INSTANCES.md`](./INSTANCES.md) | Registered pool instances |
 | [`scaffold/`](./scaffold/) | Copy for a new product pool instance |
 
@@ -54,6 +57,7 @@ cp -R ⟨lk-bloom⟩/hive/agent-team-pools/scaffold \
 | Source | Use for |
 |---|---|
 | This pack | Domain pools, Research Brains, insight inbox |
+| Persistent Research Kit | Bounded recurring insight (charter + validate script) |
 | Product `_build-master` | WORKSTREAMS / BP / worktree / audit / preview / CLOSEOUT |
 | Product site `AGENTS.md` | Site-local agent runbook pointers |
 | Bloom Protocol | Governance SOP when 2+ writers |

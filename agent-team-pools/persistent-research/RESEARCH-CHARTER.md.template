@@ -1,0 +1,90 @@
+# Research Charter — ⟨pool-id⟩ (⟨PRODUCT_NAME⟩)
+
+**Allowed statuses:** `draft` · `admin-locked` · `active` · `paused`  
+**Current status:** `draft`  
+**poolPatternVersion kit:** `0.3`  
+**Pause file:** `PAUSE` in this directory (presence = refuse new sessions)
+
+> Admin fills and locks before any Persistent Research Brain session.  
+> This is **not** CP-0. Shipping units still use the product `_build-master` loop.
+
+---
+
+## Identity
+
+| Field | Value |
+|---|---|
+| Product | ⟨PRODUCT_NAME⟩ |
+| Pool id | ⟨pool-id⟩ |
+| Instance root | ⟨path-to-pool-instance⟩ |
+| Pool folder | ⟨path-to-pools/pool-id⟩ |
+| Charter owner (Admin) | ⟨name⟩ |
+
+## Research questions
+
+1. ⟨question-1⟩
+2. ⟨question-2⟩
+3. ⟨question-3⟩
+
+## Three layers (compile insight; do not invent SoR)
+
+| Layer | Location | Rule |
+|---|---|---|
+| **Raw sources** | ⟨immutable paths / URLs / CLOSEOUT digests⟩ | Read-only — Brain never edits |
+| **Compiled insight** | This pool `HIGHLIGHTS.md`, `DIGESTS/`, `PROPOSALS.md`, optional `wiki/`, optional `RESEARCH-INDEX.md` | Brain may append/update **insight only** |
+| **Schema** | This charter + [`PERSISTENT-RESEARCH-BRAIN.md`](./PERSISTENT-RESEARCH-BRAIN.md) (or cite-by-path from hive kit) | Admin-owned; agents do not self-expand walls |
+
+## Allowed paths (local project boundary)
+
+- ⟨path-1⟩
+- ⟨path-2⟩
+
+## Do not touch
+
+- ⟨path-or-rule-1⟩
+- Feature code / worktrees / WORKSTREAMS rows
+- Secrets, `.env`, keys, PEM
+- Cross-hive shares without Admin gate ([`ORCHESTRATION.md`](../../ORCHESTRATION.md) §0a)
+
+## Cadence (suggestion only — not a Hive daemon)
+
+| Mode | Suggestion |
+|---|---|
+| Human | Admin asks Brain after CLOSEOUT / weekly skim |
+| External | cron or GitHub Action that **opens an agent session** with the Brain prompt — never a Hive-embedded model runner |
+
+**Max iterations per session:** ⟨N⟩ (hard stop)  
+**Soft budget notes:** ⟨time / token awareness — e.g. “one Cursor session, stop after N digests”⟩
+
+## Optional surfaces
+
+| Surface | Enabled? | Path |
+|---|---|---|
+| Dated DIGESTS | yes / no | `DIGESTS/YYYY-MM-DD-<slug>.md` |
+| Optional pool `wiki/` | yes / no | `wiki/` (insight pages only) |
+| `RESEARCH-INDEX.md` | yes / no | catalog of digests/wiki pages |
+| `RUN-LOG.md` | **yes** (required) | append-only |
+
+## Admin phrases
+
+| Phrase | Effect |
+|---|---|
+| `start research loop ⟨pool-id⟩` | Status → `active` (from `admin-locked` or `paused` after removing `PAUSE`) |
+| `pause research loop ⟨pool-id⟩` | Create `PAUSE`; status → `paused` |
+| `lock research charter ⟨pool-id⟩` | Status → `admin-locked` (ready for validate + first start) |
+
+## Session modes allowed
+
+- [ ] ingest — compile raw → DIGESTS / wiki / index
+- [ ] query — answer from compiled insight + cites
+- [ ] lint — contradictions / stale / orphans → HIGHLIGHTS or INBOX
+
+## Grounding
+
+- Routine research: **Cursor search tools only**
+- Never: product OpenRouter, `UVRN_DASH_AI_KEY`, `DASH_PROVIDER=agent`, `DASH2_PROVIDER=agent` for this loop
+
+## Promote path
+
+Insight → `PROPOSALS.md` / `INBOX.md` → Admin promote per [`../PROMOTE-TO-WORKSTREAMS.md`](../PROMOTE-TO-WORKSTREAMS.md).  
+Brain never invents WORKSTREAMS rows.

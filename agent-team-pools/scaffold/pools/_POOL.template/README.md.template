@@ -29,3 +29,9 @@
 ## Escalation
 
 `interesting` / `important` highlights → instance [`../../INBOX.md`](../../INBOX.md)
+
+## Optional: Persistent Research Kit
+
+For bounded recurring insight loops (charter + validate script — not CP-0):  
+`lk-bloom/hive/agent-team-pools/persistent-research/`  
+Admin guide: `persistent-research/HOW-TO-PERSISTENT-RESEARCH.md`

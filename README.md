@@ -4,7 +4,7 @@
 
 **Cold-start (every agent, every time):** read [`ORCHESTRATION.md`](./ORCHESTRATION.md) first — includes local project boundary + bee roster.
 
-**Versions:** Master Build Pattern **0.5.1** · Agent Team Pools **0.2**
+**Versions:** Master Build Pattern **0.5.1** · Agent Team Pools **0.3**
 
 ## Quick Start
 
@@ -21,13 +21,13 @@
 | [`CONTRIBUTING.md`](./CONTRIBUTING.md) | Proposals + Admin steward rules |
 | [`LICENSE`](./LICENSE) | MIT |
 | [`master-build/`](./master-build/) | Master Build Pattern **v0.5.1** (unit loop) |
-| [`agent-team-pools/`](./agent-team-pools/) | Agent Team Pools **v0.2** (org chart + Brains) |
+| [`agent-team-pools/`](./agent-team-pools/) | Agent Team Pools **v0.3** (org chart + Brains + Persistent Research Kit) |
 | [`doctrine/`](./doctrine/) | OOP + React-universal ADRs |
 | [`distill/`](./distill/) | Short operator notes |
 | [`proposals/`](./proposals/) | Hive pattern/doctrine upgrade inbox |
 | [`registry/`](./registry/) | Public hive map template |
 | [`scripts/publish-public-tip.sh`](./scripts/publish-public-tip.sh) | Dual-publish allowlist guard (dry-run default) |
 
-**Smoke (docs-only):** [`master-build/instances/smoke-hive-0_5`](./master-build/instances/smoke-hive-0_5) · [`master-build/instances/smoke-docs-only`](./master-build/instances/smoke-docs-only) · [`agent-team-pools/instances/smoke-docs-only`](./agent-team-pools/instances/smoke-docs-only)
+**Smoke (docs-only):** [`master-build/instances/smoke-hive-0_5`](./master-build/instances/smoke-hive-0_5) · [`master-build/instances/smoke-docs-only`](./master-build/instances/smoke-docs-only) · [`agent-team-pools/instances/smoke-docs-only`](./agent-team-pools/instances/smoke-docs-only) · [`agent-team-pools/instances/smoke-persistent-research`](./agent-team-pools/instances/smoke-persistent-research)
 
 **Clone:** this repo is the public pattern home ([lk-bloom/hive](https://github.com/lk-bloom/hive)). Live product registries are not published here.

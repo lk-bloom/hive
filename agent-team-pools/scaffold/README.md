@@ -1,9 +1,10 @@
 # Scaffold — copy me for a new product agent-team-pool instance
 
-**poolPatternVersion:** `0.2`  
+**poolPatternVersion:** `0.3`  
 **Source:** `hive/agent-team-pools/scaffold/`  
 **Companion:** Master Build Pattern `0.5.1`  
-**Doctrine:** [`../POOL-PATTERN.md`](../POOL-PATTERN.md)
+**Doctrine:** [`../POOL-PATTERN.md`](../POOL-PATTERN.md)  
+**Opt-in:** [`../persistent-research/`](../persistent-research/)
 
 ## Adopt steps
 

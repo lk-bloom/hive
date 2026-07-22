@@ -1,0 +1,10 @@
+# PAUSE — Persistent Research Loop
+
+Rename or copy this file to `PAUSE` (no extension) in the same directory as the
+filled `RESEARCH-CHARTER.md` to refuse new Brain sessions.
+
+Admin phrase: `pause research loop ⟨pool-id⟩` → create `PAUSE`.  
+Resume: remove `PAUSE`, then `start research loop ⟨pool-id⟩`.
+
+Agents must exit immediately when `PAUSE` is present.
+`check-research-loop.sh` exits non-zero while paused.
