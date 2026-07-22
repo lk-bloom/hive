@@ -1,0 +1,19 @@
+# TEAMS — ⟨pool-id⟩
+
+Working bees for this pool. Map roles to hive bee types (`lk-bloom/hive/ORCHESTRATION.md` §6).  
+Shipping units still follow product Master Build COORDINATION (worktree / audit / preview).  
+**Local boundary:** only assigned product/pool paths unless Admin approves a cross-hive share.
+
+| Bee | Owns | Spawn / prompt | Must not |
+|---|---|---|---|
+| **Orchestrator** | Pick unit; ledger; spawn build/audit | ⟨path-to-MASTER-PREP-or-N/A⟩ | Feature code; cross-hive share without Admin |
+| **Build** | Implement in local worktree | ⟨path-to-BUILD-PROMPT-or-N/A⟩ | Self-audit; PR before preview; write outside assigned paths |
+| **Audit** | Independent check | ⟨path-to-AUDIT-PROMPT-or-N/A⟩ | Commit on build branch |
+| **Research Brain** | Insight / highlights / digests | [`BRAIN-PROMPT.md`](./BRAIN-PROMPT.md) | Feature PRs; second job board |
+| **Design** | Chrome / handoff notes (if this pool owns UI) | ⟨path-or-N/A⟩ | Merge without unit loop |
+| **Executive-ops** | Path / citation hygiene for this domain | ⟨path-or-N/A⟩ | Program lock; promote |
+| ⟨specialist⟩ | ⟨…⟩ | ⟨…⟩ | ⟨…⟩ |
+
+## Concurrency
+
+Follow product writer caps. Only one Build writer per unit worktree.

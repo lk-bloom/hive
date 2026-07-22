@@ -1,0 +1,54 @@
+# COMPOSER — ⟨PRODUCT_NAME⟩ agent team pools
+
+**poolPatternVersion:** `0.2`  
+**Product slug:** `⟨product-slug⟩`  
+**Instance path:** `⟨instance-absolute-or-executive-relative-path⟩`  
+**Status:** `⟨seed-draft | awaiting-admin-pool-lock | admin-locked | active⟩`
+
+System guide for this product’s **agent team pool** instance. Read before `AGENTS.md` and `REGISTRY.md`.
+
+---
+
+## 1 · Purpose
+
+This instance is the org chart + Research Brain notebook for ⟨PRODUCT_NAME⟩ across domains. It does **not** own the shipping job board.
+
+| Concern | Source of truth |
+|---|---|
+| What to ship next | Product WORKSTREAMS / BP (build-master paths below) |
+| Who watches which domain | This instance `REGISTRY.md` + `pools/` |
+| Insight / enhancements | Pool `HIGHLIGHTS.md` / `PROPOSALS.md` → `INBOX.md` |
+
+---
+
+## 2 · Linked build-masters / job boards
+
+| Domain | Build-master / queue path | Notes |
+|---|---|---|
+| ⟨domain⟩ | ⟨path-to-WORKSTREAMS-or-build-master⟩ | ⟨…⟩ |
+
+---
+
+## 3 · Path map (repos / trees Lead used)
+
+| Pool id | Watches (absolute or well-known paths) |
+|---|---|
+| ⟨pool-id⟩ | ⟨paths⟩ |
+
+---
+
+## 4 · Hard walls (product)
+
+- ⟨wall-1⟩
+- ⟨wall-2⟩
+- Local ops research: Cursor search tools only — never product OpenRouter / dash AI keys for routine Brain / Lead work.
+
+---
+
+## 5 · Cold-start order
+
+1. This file  
+2. `AGENTS.md`  
+3. `REGISTRY.md`  
+4. `INBOX.md`  
+5. Active `pools/<id>/`  

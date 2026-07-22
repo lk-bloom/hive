@@ -1,0 +1,29 @@
+# HIGHLIGHTS — ⟨pool-id⟩
+
+**Severity:** `info` · `interesting` · `important`  
+**Status:** `open` · `acked` · `parked` · `promoted-to-WS`
+
+Escalate only `interesting` / `important` to instance `INBOX.md`.  
+CLOSEOUT digests prefer `DIGESTS/`; add a one-line pointer here when useful.
+
+---
+
+## Log
+
+<!-- Newest first -->
+
+### Template (delete when unused)
+
+```
+### YYYY-MM-DD — ⟨one-line finding⟩
+- **Severity:** info | interesting | important
+- **Why it matters:** …
+- **Evidence:** ⟨paths, commits, docs, DIGESTS/…⟩
+- **Suggested next step:** …
+- **Status:** open
+- **Escalated to INBOX:** no | yes
+```
+
+---
+
+_(no highlights yet)_

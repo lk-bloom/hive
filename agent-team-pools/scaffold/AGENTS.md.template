@@ -1,0 +1,78 @@
+# AGENTS — ⟨PRODUCT_NAME⟩ pool orchestration
+
+**poolPatternVersion:** `0.2`  
+**Product slug:** `⟨product-slug⟩`  
+**Status:** `⟨seed-draft | awaiting-admin-pool-lock | admin-locked | active⟩`  
+**Hive cold-start:** `lk-bloom/hive/ORCHESTRATION.md` (read first)
+
+Agent map for this **pool instance**. Companion to product `_build-master` `AGENTS.md` (unit loop) — do not merge the two files.
+
+---
+
+## 0 · Local project boundary (master rule)
+
+**Default:** bees only read/write assigned local paths.  
+**Cross-hive share:** human Admin gated — record on the product build-master `COORDINATION.md`.  
+**Always OK:** cite `lk-bloom/hive/` doctrine.
+
+| Surface | Path |
+|---|---|
+| Pool instance | `⟨this folder⟩` |
+| Linked build-master | `⟨path⟩` |
+| Product primary checkout | `⟨path⟩` |
+
+---
+
+## 1 · Bee roster (required)
+
+| Bee | Session / owner | Maintains | Must not |
+|---|---|---|---|
+| **Admin** (human) | ⟨name⟩ | Pool lock; ack INBOX; promote → WORKSTREAMS; cross-hive gates | Treat Brain escalate as auto-ship |
+| **Master Pool Lead** | ⟨…⟩ | Fill/refresh instance + path map | Feature code; worktrees; CP-0; auto-promote |
+| **Executive-ops** | ⟨… or via build-master⟩ | Executive path hygiene; registry drafts | Program/pool lock; promote |
+| **Research Brain** (per pool) | see `pools/<id>/` | Watch; HIGHLIGHTS; DIGESTS; PROPOSALS; INBOX | Feature PRs; second job board; cross-hive share without Admin |
+| **Design** | ⟨… or n/a⟩ | design-related highlights for chrome pools | Ship without build-master unit loop |
+| **Pool working teams** | `pools/<id>/TEAMS.md` | Domain orchestrator / build / audit links | Ignore product COORDINATION / fixture rules |
+
+Domain `TEAMS.md` rows must map to the hive bee types in `lk-bloom/hive/ORCHESTRATION.md` §6.
+
+---
+
+## 2 · Spawn order
+
+### Greenfield
+
+1. Admin provides path map → spawn **Master Pool Lead** (`MASTER-POOL-LEAD-PROMPT.md`)  
+2. Lead stops at **awaiting Admin pool lock** (roster + paths filled)  
+3. Admin locks → status `admin-locked` / `active`  
+4. Brains and working teams may run per pool prompts  
+
+### Per Research Brain pass
+
+1. Paste `pools/<id>/BRAIN-PROMPT.md` into a fresh agent (or resume Brain session)  
+2. Brain appends HIGHLIGHTS / DIGESTS; may append PROPOSALS; escalates only `interesting` / `important` → `INBOX.md`  
+3. Stop for Admin review on escalations — no auto WORKSTREAMS rows  
+
+### Per shipping unit (delegates to build-master)
+
+Use the product’s Master Build Orchestrator / Build / Audit prompts — **not** this pack’s Lead. Pool `TEAMS.md` may deep-link those prompts.
+
+---
+
+## 3 · Prompt files
+
+| Role | Prompt |
+|---|---|
+| Master Pool Lead | `MASTER-POOL-LEAD-PROMPT.md` |
+| Research Brain | `pools/<id>/BRAIN-PROMPT.md` |
+| Working teams | Linked from `pools/<id>/TEAMS.md` (often build-master prompts) |
+
+---
+
+## 4 · Active ownership (live)
+
+| Slot | Agent / session | Pool | Notes |
+|---|---|---|---|
+| ⟨…⟩ | ⟨…⟩ | ⟨…⟩ | ⟨…⟩ |
+
+Clear when a Brain pass or Lead refresh ends.

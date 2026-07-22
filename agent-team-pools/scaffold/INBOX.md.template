@@ -1,0 +1,26 @@
+# INBOX — ⟨PRODUCT_NAME⟩ pool escalations
+
+**Purpose:** Only `interesting` and `important` Research Brain findings. Routine notes stay in pool `HIGHLIGHTS.md`.
+
+**Status values:** `open` · `acked` · `parked` · `promoted-to-WS`
+
+---
+
+## Entries
+
+<!-- Newest first. Lead leaves this section empty (or with a header-only stub). -->
+
+### Template (delete when unused)
+
+```
+### YYYY-MM-DD — ⟨pool-id⟩ — ⟨one-line title⟩
+- **Severity:** interesting | important
+- **From:** pools/⟨pool-id⟩/HIGHLIGHTS.md (anchor or date)
+- **Why it matters:** …
+- **Suggested next step:** … (optional WS/BP id after Admin promote)
+- **Status:** open
+```
+
+---
+
+_(no escalations yet)_

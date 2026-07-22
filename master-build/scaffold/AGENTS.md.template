@@ -1,0 +1,113 @@
+# AGENTS — ⟨PRODUCT_NAME⟩ team orchestration
+
+**patternVersion:** `0.5`  
+**Product slug:** `⟨product-slug⟩`  
+**CP-0 mode:** `⟨admin-gated | automation-eligible⟩` — see `04-agent-ops/CP0-POLICY.md`  
+**Hive cold-start:** `lk-bloom/hive/ORCHESTRATION.md` (read first)
+
+Agent team map for this build-master. Read after `COMPOSER.md`.
+
+---
+
+## 0 · Local project boundary (master rule)
+
+**Default:** bees only read/write inside assigned local paths below.  
+**Cross-hive share** (other products / hive-network agents): **human Admin gated only** — record in `04-agent-ops/COORDINATION.md`.  
+**Always OK:** cite-by-path read of `lk-bloom/hive/` doctrine.
+
+### Assigned local paths (Seed fills)
+
+| Surface | Path |
+|---|---|
+| Primary checkout | `⟨path⟩` |
+| Build-master | `⟨path⟩` |
+| Worktree prefix | `⟨e.g. ../wt-<slug>-⟩` |
+| Pool instance (if any) | `⟨path or n/a⟩` |
+| `workLogsRoot` | `⟨path⟩` |
+| `historyRoot` | `⟨path⟩` |
+
+### Admin-approved cross-hive shares
+
+See `COORDINATION.md` § Cross-hive shares. Default: **none**.
+
+---
+
+## 1 · Bee roster (required)
+
+Human **Admin** remains governor (locks, preview, promote, merge, CP-0 mode, cross-hive gates).  
+Fill every row Seed needs for this product; mark unused bees `n/a` with reason.
+
+| Bee | Session / owner | Maintains | Must not |
+|---|---|---|---|
+| **Admin** (human) | ⟨name⟩ | Locks; preview; promote; merge; cross-hive gates | Leave preview to agents |
+| **Seed** | ⟨…⟩ | MASTER-PLAN, WORKSTREAMS, BP-01, COMPOSER, AGENTS | Feature code; CP-0; grant lock |
+| **Executive-ops** | ⟨…⟩ | Executive docs; COMPOSER pointers; citation hygiene | Program lock; promote; preview; merge |
+| **Design** | ⟨… or n/a⟩ | design-handoff; UI catalog | Merge without audit/preview; expand walls alone |
+| **Orchestrator** | ⟨…⟩ | CP-0; spawn; ledger; CLOSEOUT under Admin | Feature code; expand walls |
+| **Build** | ⟨…⟩ | Worktree implementation (local only) | Self-audit; PR before preview; write outside assigned paths |
+| **Audit** | ⟨…⟩ | Independent Check | Commit on build branch; grant preview |
+| **Publisher** | ⟨…⟩ | PR after preview; merge; hand off CLOSEOUT | PR without preview; skip CLOSEOUT |
+| **Research Brain** | ⟨via pool⟩ | HIGHLIGHTS; DIGESTS; PROPOSALS | Feature PRs; second job board |
+| **Master Pool Lead** | ⟨… or n/a⟩ | Pool instance map | Auto-promote; feature PRs |
+
+**Handoff-ready ≠ PR-ready ≠ closeout-done.**
+
+Until **Admin-agent mode** is unlocked (parked — `hive/registry/FUTURE-ADMIN-AGENT-LOCK.md`), “admin agent” means **Executive-ops** only.
+
+---
+
+## 2 · Spawn order
+
+### Greenfield
+
+1. Admin idea → spawn **Seed** (`04-agent-ops/SEED-AGENT-PROMPT.md`)  
+2. Seed stops at **awaiting Admin program lock** (roster + paths filled)  
+3. Admin locks → program status `admin-locked` / `active`  
+4. Orchestrator (`MASTER-PREP-PROMPT.md`) starts units per CP0-POLICY  
+
+### Per unit (after program lock)
+
+1. **CP-0** — Admin unlock phrase **or** automation-eligible circumstance PASS  
+2. Orchestrator: ledger `started` + worktree from `origin/main`  
+3. Spawn **Build** (fresh context) → handoff-ready  
+4. Spawn **Audit** (never the builder) → PASS / FAIL  
+5. Stop for Admin **sandbox preview** (or docs-only waiver)  
+6. **Publisher** → PR → merge  
+7. **CLOSEOUT** → Brain digest → next unit per CP0-POLICY  
+
+---
+
+## 3 · Auto-spawn (automation-eligible only)
+
+When MASTER-PLAN CP-0 mode is `automation-eligible`, Orchestrator may CP-0 / spawn a new in-domain build **without** a per-unit Admin phrase **only if** every check in `04-agent-ops/CP0-POLICY.md` PASSes.
+
+Still never automatic:
+
+- Program lock after Seed  
+- Expanding hard walls / spend caps  
+- Out-of-domain units  
+- Skipping audit or preview (unless documented waiver class)  
+- Cross-hive file share  
+
+Default mode is `admin-gated` — park with **do not start** until Admin unlocks.
+
+---
+
+## 4 · Prompt files
+
+| Role | Prompt |
+|---|---|
+| Seed | `04-agent-ops/SEED-AGENT-PROMPT.md` |
+| Orchestrator | `04-agent-ops/MASTER-PREP-PROMPT.md` |
+| Build | `04-agent-ops/BUILD-AGENT-PROMPT.md` |
+| Audit | `04-agent-ops/AUDIT-AGENT-PROMPT.md` |
+
+---
+
+## 5 · Active ownership (live)
+
+| Slot | Agent / session | Unit | Worktree | Notes |
+|---|---|---|---|---|
+| ⟨…⟩ | ⟨…⟩ | ⟨…⟩ | ⟨…⟩ | ⟨…⟩ |
+
+Keep in sync with `COORDINATION.md`. Clear on CLOSEOUT.

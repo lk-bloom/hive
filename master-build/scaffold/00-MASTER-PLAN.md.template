@@ -1,0 +1,110 @@
+# 00 · MASTER PLAN — ⟨PRODUCT_NAME⟩
+
+**patternVersion:** `0.5.1`  
+**Product slug:** `⟨product-slug⟩`  
+**Owner:** ⟨Admin name⟩  
+**Program status:** `⟨seed-draft | admin-locked | active⟩`  
+**Build target:** `⟨repo paths: UI + API⟩`  
+**Site / primary checkout:** `⟨absolute path to primary git checkout⟩`  
+**Repo:** `⟨org/repo⟩`  
+**workLogsRoot:** `⟨absolute or repo-relative durable SoR path for overview+tech logs + index README⟩`  
+**historyRoot:** `⟨absolute or repo-relative historical map path; default this instance/05-history⟩`  
+**CP-0 mode:** `⟨admin-gated | automation-eligible⟩` — see `04-agent-ops/CP0-POLICY.md`
+
+Locked product definition and ground rules for this instance of the Master Build Pattern.
+
+**Seed provenance:** ⟨Admin idea one-liner⟩ — ⟨YYYY-MM-DD⟩
+
+---
+
+## 1 · What this product is
+
+⟨2–4 sentences. User flow. What “done” looks like for the current program of work.⟩
+
+---
+
+## 2 · Locked decisions
+
+| ID | Decision | Date |
+|---|---|---|
+| D1 | ⟨…⟩ | ⟨YYYY-MM-DD⟩ |
+
+---
+
+## 2b · Assumptions (from Seed — clear on program lock)
+
+⟨Bullets Seed left for Admin. Strike, accept, or rewrite when status → admin-locked.⟩
+
+---
+
+## 3 · Product adapter (Required vs Recommended)
+
+Fill this when adopting / after Seed. Pattern doctrine: `lk-bloom/hive/master-build/MASTER-BUILD-PATTERN.md` (v0.5.1).
+
+### Required (pattern)
+
+| Slot | Instance fill |
+|---|---|
+| Admin program lock | Status above; no unit CP-0 while `seed-draft` |
+| Independent audit | Always (never self-audit) |
+| Human sandbox preview before PR | Admin: ⟨name⟩ · docs-only waiver process: ⟨link or note⟩ |
+| One unit / one worktree / one PR | Worktree prefix: `../wt-⟨product-slug⟩-` · branch: `⟨product-slug⟩/…` |
+| Primary checkout on `main` | Path: `⟨primary checkout⟩` |
+| Append-only ledger + PREP→READY→HANDOFF | Under this build-master |
+| Local safe defaults | See `04-agent-ops/LOCAL-SAFE-DEFAULTS.md` — provider/fixture names below |
+| Publisher checklist | `04-agent-ops/PUBLISHER.md` (through merge) |
+| Post-merge CLOSEOUT | `04-agent-ops/CLOSEOUT.md` |
+| Dual worklogs on CLOSEOUT | Finalize under **workLogsRoot** (above); overview + tech; index README |
+| Linked history on CLOSEOUT | Append one unit entry + newest-first row under **historyRoot** (above) |
+| CP-0 policy | Mode above; domain + unlock phrase below; full rules in `04-agent-ops/CP0-POLICY.md` |
+
+**workLogsRoot fill:** declare a durable admin path with a README index (e.g. `⟨docs-repo⟩/admin/work-logs/` or `⟨this-instance⟩/work-logs/`).
+
+**historyRoot fill:** declare a navigable archive path with a README index (default `⟨this-instance⟩/05-history/`; products with an occupied number may use another path). It maps to evidence and never replaces WORKSTREAMS or worklogs.
+
+**CP-0 / automation fill:**
+
+| Field | Value |
+|---|---|
+| CP-0 mode | `⟨admin-gated | automation-eligible⟩` |
+| System domain (auto-spawn bounds) | ⟨paths / packages / WS IDs⟩ |
+| Unlock phrase (admin-gated) | ⟨e.g. `start BP-NN`⟩ |
+| Multi-slot concurrent worktrees | ⟨yes / no⟩ |
+
+**Local safe defaults (product fills):**
+
+| Variable / tool | Local (safe) value | Live / gated only when Admin says |
+|---|---|---|
+| ⟨e.g. PROVIDER⟩ | `fixture` / mock | `agent` + real keys |
+| Secrets | never on disk / never in logs | Admin vault / host env |
+
+### Recommended (mark N/A or Required for this product)
+
+| Slot | This product | Paths / notes |
+|---|---|---|
+| UI / chrome catalog before new surfaces | ⟨Required / Recommended / N/A⟩ | ⟨catalog path if Required⟩ |
+| `02-contracts/` | ⟨Required / Recommended / N/A⟩ | |
+| `design-handoff/` | ⟨Required / Recommended / N/A⟩ | |
+| Architecture / OOP tip stamp on CLOSEOUT | ⟨Required / Recommended / N/A⟩ | ⟨paths⟩ |
+
+---
+
+## 4 · Hard walls (product-specific — not in pattern doctrine)
+
+⟨List import bans, vocabulary laws, spend caps, zones off-limits. Example style: “never import from legacy UI zone X.”⟩
+
+---
+
+## 5 · Env + commands (sketch)
+
+| Concern | Command / note |
+|---|---|
+| Dev | ⟨…⟩ |
+| Test | ⟨…⟩ |
+| Flag / feature gate | ⟨…⟩ |
+
+---
+
+## 6 · Definition of done (program)
+
+⟨Measurable exit for this build program.⟩

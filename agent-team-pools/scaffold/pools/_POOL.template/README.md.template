@@ -1,0 +1,31 @@
+# Pool — ⟨pool-id⟩
+
+**Product:** ⟨PRODUCT_NAME⟩ (`⟨product-slug⟩`)  
+**Mission:** ⟨one-line mission⟩
+
+## Allowed paths (watch / build affinity)
+
+- ⟨path-1⟩
+- ⟨path-2⟩
+
+## Do not touch
+
+- ⟨path-or-rule-1⟩
+- ⟨path-or-rule-2⟩
+
+## Job board
+
+- ⟨link to WORKSTREAMS / BP / N/A⟩
+
+## Files in this pool
+
+| File | Role |
+|---|---|
+| [`HIGHLIGHTS.md`](./HIGHLIGHTS.md) | Brain notebook |
+| [`PROPOSALS.md`](./PROPOSALS.md) | Enhancement cards for Admin review |
+| [`BRAIN-PROMPT.md`](./BRAIN-PROMPT.md) | Paste prompt for Research Brain |
+| [`TEAMS.md`](./TEAMS.md) | Working team roles + spawn links |
+
+## Escalation
+
+`interesting` / `important` highlights → instance [`../../INBOX.md`](../../INBOX.md)

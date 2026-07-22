@@ -1,0 +1,49 @@
+# UNIT HANDOFF — ⟨UNIT⟩
+
+**patternVersion:** `0.5.1`  
+**Date:** ⟨YYYY-MM-DD⟩  
+**Branch:** ⟨…⟩  
+**Worktree:** ⟨…⟩  
+**Unit start SHA:** ⟨immutable pre-unit anchor⟩  
+**Tip SHA:** ⟨…⟩
+
+## Status
+
+- [ ] Implementation complete (local commits)  
+- [ ] Acceptance self-checked by build (notes below)  
+- [ ] Audit: PASS | PASS-WITH-NOTES | FAIL — report: `03-audit/reports/⟨…⟩`  
+- [ ] **Handoff-ready** (audited)  
+- [ ] Admin sandbox preview — **pending** / approved ⟨date · who⟩  
+- [ ] PR-ready (only after preview)  
+- [ ] Draft worklogs (optional under `04-agent-ops/`) — overview: ⟨path⟩ · tech: ⟨path⟩ / waiver: ⟨…⟩  
+- [ ] Closeout-done — **after merge** via `CLOSEOUT.md` (worklogs under `workLogsRoot`; linked entry under `historyRoot`; primary sync complete/waived)  
+
+## What shipped
+
+⟨bullets⟩
+
+## Multi-agent contribution manifest
+
+One row per contributor; branch name alone is not ownership evidence.
+
+| Agent / session | Commit SHA(s) | Paths / responsibility | Evidence / sub-handoff |
+|---|---|---|---|
+| ⟨…⟩ | ⟨…⟩ | ⟨…⟩ | ⟨…⟩ |
+
+## How to sandbox preview
+
+```bash
+⟨commands using local safe defaults⟩
+```
+
+## Publisher next
+
+Follow `04-agent-ops/PUBLISHER.md` after preview approval. Do not open PR from this handoff alone.
+
+## CLOSEOUT next (after land)
+
+Follow `04-agent-ops/CLOSEOUT.md`. Finalize dual worklogs at product **workLogsRoot**, append the **historyRoot** entry, and verify primary main matches `origin/main`. Do not start next gated unit unless Admin says **start …**.
+
+## Follow-ups / notes
+
+⟨nits from PASS-WITH-NOTES, parked items⟩

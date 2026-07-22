@@ -1,0 +1,89 @@
+# COMPOSER — ⟨PRODUCT_NAME⟩ system guide
+
+**patternVersion:** `0.5.1`  
+**Product slug:** `⟨product-slug⟩`  
+**Program status:** `⟨seed-draft | admin-locked | active⟩`  
+**CP-0 mode:** `⟨admin-gated | automation-eligible⟩` — see `04-agent-ops/CP0-POLICY.md`
+
+Main system guide for this product build-master. Agents read this **first**, then `AGENTS.md`, then the Master Build Pattern doctrine.
+
+---
+
+## 1 · What this program is
+
+⟨2–4 sentences from Seed / MASTER-PLAN. What we are building and what “done” means.⟩
+
+**Seed idea (provenance):** ⟨one-liner Admin idea⟩ — ⟨YYYY-MM-DD⟩
+
+---
+
+## 2 · Cold-start order (this instance)
+
+1. This file (`COMPOSER.md`)  
+2. `AGENTS.md` — team roles and spawn rules  
+3. `lk-bloom/hive/master-build/MASTER-BUILD-PATTERN.md` (v0.5.1)  
+4. `04-agent-ops/COORDINATION.md`  
+5. `03-audit/AUDIT-PROTOCOL.md`  
+6. `00-MASTER-PLAN.md` (walls, `workLogsRoot`, `historyRoot`, CP-0 mode)  
+
+Then: `WORKSTREAMS.md` + active unit PREP/READY/blueprint.
+
+| Situation | Read next |
+|---|---|
+| Greenfield / new idea only | `04-agent-ops/PROGRAM-SEED.md` + `SEED-GUIDANCE.md` |
+| Auto-spawn / pure automation | `04-agent-ops/CP0-POLICY.md` |
+| After merge | `04-agent-ops/CLOSEOUT.md` |
+
+---
+
+## 3 · Lifecycle map
+
+```
+Seed-from-idea → Admin program lock
+  → CP-0 (per CP0-POLICY)
+  → worktree → Build → Audit → Admin preview → Publisher → CLOSEOUT
+  → next unit (again per CP0-POLICY)
+```
+
+- **Program lock** is always human (never automatic after Seed).  
+- **Unit CP-0** is Admin-gated by default; automation-eligible only when MASTER-PLAN + CP0-POLICY allow.
+
+---
+
+## 4 · Where product law lives
+
+| Topic | File |
+|---|---|
+| Hard walls, honesty, spend | `00-MASTER-PLAN.md` |
+| Live queue | `WORKSTREAMS.md` |
+| Unit acceptance | `01-blueprints/` |
+| Durable worklogs | `workLogsRoot` (see MASTER-PLAN) |
+| Historical archive map | `historyRoot` (see MASTER-PLAN) |
+| Agent spawn / must-nots | `AGENTS.md` |
+
+Do not invent walls outside MASTER-PLAN. Do not fork Bloom Protocol here.
+
+---
+
+## 5 · Admin phrases (fill)
+
+| Action | Phrase / note |
+|---|---|
+| Program lock | ⟨e.g. `lock program`⟩ |
+| Unit unlock (admin-gated) | ⟨e.g. `start BP-01`⟩ |
+| Preview approved | ⟨e.g. `preview approved`⟩ |
+| Docs-only waiver | ⟨process⟩ |
+
+---
+
+## 6 · Assumptions (from Seed — clear on lock)
+
+⟨Bullet list Seed left for Admin review; strike or accept on program lock.⟩
+
+---
+
+## See also
+
+- Doctrine: `lk-bloom/hive/master-build/MASTER-BUILD-PATTERN.md`  
+- Seed recipe: `04-agent-ops/PROGRAM-SEED.md`  
+- CP-0: `04-agent-ops/CP0-POLICY.md`

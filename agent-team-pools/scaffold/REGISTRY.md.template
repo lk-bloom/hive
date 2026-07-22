@@ -1,0 +1,29 @@
+# REGISTRY — ⟨PRODUCT_NAME⟩ pools
+
+**poolPatternVersion:** `0.2`  
+**Product slug:** `⟨product-slug⟩`  
+**Status:** `⟨seed-draft | awaiting-admin-pool-lock | admin-locked | active⟩`  
+**Instance:** `⟨instance-path⟩`
+
+Org roster. Job board remains product WORKSTREAMS / BP — this file only lists pools and Brain pointers.
+
+---
+
+## Pools
+
+| Pool id | Mission (one line) | Brain prompt | Teams | Job board link |
+|---|---|---|---|---|
+| ⟨pool-id⟩ | ⟨mission⟩ | `pools/⟨pool-id⟩/BRAIN-PROMPT.md` | `pools/⟨pool-id⟩/TEAMS.md` | ⟨WORKSTREAMS-or-N/A⟩ |
+
+---
+
+## Escalation
+
+- All Brain escalations (`interesting` / `important`) → [`INBOX.md`](./INBOX.md)  
+- Admin acks in INBOX; may promote a PROPOSALS card into a real WORKSTREAMS / BP row  
+
+---
+
+## Concurrency note
+
+Respect product COORDINATION writer caps (e.g. max concurrent worktrees). Pool Brains are read/insight writers on this instance only — they do not count as feature writers unless Admin says otherwise.

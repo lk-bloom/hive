@@ -1,0 +1,49 @@
+# ⟨UNIT⟩ — work log (overview / narrative)
+
+**Date:** ⟨YYYY-MM-DD⟩  
+**Product:** ⟨PRODUCT_NAME⟩  
+**Unit:** ⟨UNIT slug / title⟩  
+**patternVersion:** `0.2`  
+**Merge SHA (after land):** ⟨sha or pending⟩  
+**SoR path:** ⟨workLogsRoot⟩/⟨YYYY-MM-DD-product-unit-overview.md⟩
+
+Narrative / strategic session layer. Tech details belong in the companion `*-tech` log. Aligns with Cursor/Claude skill `work-log`.
+
+## Session overview
+
+- Project:  
+- Main goal:  
+
+## Conversation arc and context
+
+⟨What brought us here; what we were solving and why.⟩
+
+## Decisions made (and reasoning / tradeoffs)
+
+-  
+
+## Ideas and revelations
+
+-  
+
+## Issues encountered and how they were resolved
+
+-  
+
+## Tasks: completed and still pending
+
+**Completed**
+
+-  
+
+**Pending**
+
+-  
+
+## Next steps / open questions
+
+-  
+
+## Admin unlock
+
+Next gated unit: ⟨parked — do not start unless Admin says start …⟩

@@ -1,0 +1,46 @@
+# ⟨UNIT⟩ — work log (tech)
+
+**Date:** ⟨YYYY-MM-DD⟩  
+**Product:** ⟨PRODUCT_NAME⟩  
+**Unit:** ⟨UNIT slug / title⟩  
+**patternVersion:** `0.2`  
+**Repo / branch / worktree:** ⟨…⟩  
+**Base SHA → merge SHA:** ⟨…⟩ → ⟨…⟩  
+**SoR path:** ⟨workLogsRoot⟩/⟨YYYY-MM-DD-product-unit-tech.md⟩
+
+Implementation / engineering layer. Narrative belongs in the companion overview log. Aligns with Cursor/Claude skill `work-log-tech`.
+
+## Technical context
+
+⟨Repo, branch, starting state of the build.⟩
+
+## Changes made (files / modules — what and why)
+
+-  
+
+## Architectural reasoning
+
+⟨Why these choices; alternatives weighed or rejected.⟩
+
+## Key code highlights or diffs worth preserving
+
+-  
+
+## Structural / systemic impact
+
+⟨Architecture, data model, contracts, chrome catalog.⟩
+
+## Build, test, and deploy status
+
+- Build:  
+- Tests:  
+- Preview / deploy:  
+
+## Pending technical work and open decisions
+
+-  
+
+## Audit / preview trail
+
+- Audit report: `03-audit/reports/⟨…⟩`  
+- Preview approved: ⟨date · who⟩ / waiver: ⟨…⟩  

@@ -1,0 +1,37 @@
+# History archive — ⟨PRODUCT_NAME⟩
+
+**patternVersion:** `0.5.1`  
+**historyRoot:** `⟨this directory or adapter path⟩`
+
+Newest-first navigable map of landed units. This surface summarizes and links evidence; it is **not** the live queue or a replacement for WORKSTREAMS, the append-only ledger, dual worklogs, audits, findings/reports, or architecture docs.
+
+## Status vocabulary
+
+**Overall CLOSEOUT**
+
+- `complete` — merged land + branch attribution verified, required artifacts written, and primary sync complete
+- `partial-blocked` — merged land verified, but branch gaps, foreign dirt, missing required evidence, cleanup, or sync remains unresolved
+- `invalid-precondition` — merged land/remote cannot be verified or merge ancestry fails; CLOSEOUT must stop
+
+**Primary-main sync**
+
+- `complete` — local primary `main == origin/main`
+- `partial-blocked` — dirt/divergence prevents safe synchronization
+- `invalid-precondition` — remote/land/ancestry cannot be verified
+
+Use `gap` / `unknown` only for missing **evidence fields**, not as a synchronization outcome.
+
+## Archive map
+
+| Closed | Unit | PR / merge SHA | Codeframe | Branch gaps | CLOSEOUT | Main sync | Entry |
+|---|---|---|---|---|---|---|---|
+| ⟨YYYY-MM-DD⟩ | ⟨UNIT⟩ | ⟨# / SHA⟩ | ⟨zones/modules⟩ | ⟨none / exact gap⟩ | ⟨complete / partial-blocked / invalid-precondition⟩ | ⟨complete / partial-blocked / invalid-precondition⟩ | [`⟨YYYY-MM-DD-product-unit.md⟩`](./⟨YYYY-MM-DD-product-unit.md⟩) |
+
+## Rules
+
+1. Add one newest-first row and one concise entry during every v0.5.1 CLOSEOUT.
+2. Link detailed evidence instead of copying it.
+3. Record plan divergence, anomalies, and doctrine impact honestly; use `none`, `gap`, or `unknown` when appropriate.
+4. Do not use this file to start work or silently change WORKSTREAMS status.
+5. For same-branch multi-agent work, index unresolved attribution/diff gaps and preserve the branch/worktree until disposition.
+6. Keep overall CLOSEOUT status separate from primary-main sync; main may sync successfully while attribution remains `partial-blocked`.

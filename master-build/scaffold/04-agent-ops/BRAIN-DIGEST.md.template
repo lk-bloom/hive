@@ -1,0 +1,61 @@
+# Brain Digest — CLOSEOUT → pool insight
+
+**Required** inside CLOSEOUT when the product has an agent-team-pool instance.  
+**Insight only** — not a job board. Do not create WORKSTREAMS rows from this file.
+
+**Template version:** hive MBP `0.5` · pool pack `0.2`
+
+---
+
+## Where it lands
+
+1. Write `YYYY-MM-DD-<product>-<unit>-digest.md` using this template.
+2. Place a copy (or link) under the owning pool(s):
+   - Preferred: `pools/<id>/DIGESTS/YYYY-MM-DD-<unit>.md`
+   - Or append a short pointer row in `pools/<id>/HIGHLIGHTS.md`
+3. If multiple pools own the domain, write one digest and `@mention` sibling pools (see `IDEA-EXCHANGE.md`).
+4. Escalate only `interesting` / `important` seeds to instance `INBOX.md`.
+
+If the product has **no** pool instance yet: record `digest: deferred — no pool instance` in the history entry and CLOSEOUT notes. Do not invent a pool.
+
+---
+
+## Digest body (fill)
+
+```md
+# Brain Digest — ⟨product⟩ / ⟨unit-id⟩
+
+- **Date:** YYYY-MM-DD
+- **Unit:** ⟨WS/BP id + title⟩
+- **Merge SHA:** ⟨sha⟩
+- **Owning pool(s):** ⟨pool-id⟩ …
+- **Authors:** ⟨CLOSEOUT agent⟩
+
+## What shipped
+- …
+
+## Plan vs landed
+- Divergences / deferrals: …
+- Anomalies: …
+
+## Doctrine impact
+- Product-local: ⟨updated | no doctrine change⟩
+- Shared hive doctrine residual: ⟨none | note for hive/proposals⟩
+
+## Open questions / enhancement seeds
+- … (each may become a PROPOSALS card — Admin promote only)
+
+## Cross-pool mentions
+- none | @pool-id — reason …
+
+## Status
+- recorded | escalated-to-INBOX | parked
+```
+
+---
+
+## Red lines
+
+- Digests do **not** unlock CP-0.
+- Digests do **not** replace dual worklogs or history entries.
+- Brains may turn seeds into PROPOSALS; only Admin promotes to WORKSTREAMS.

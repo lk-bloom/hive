@@ -1,0 +1,59 @@
+# ⟨UNIT⟩ — history entry
+
+**Closed:** ⟨YYYY-MM-DD⟩  
+**Pattern:** `0.5.1`  
+**PR:** ⟨URL / number⟩  
+**Unit start / PR base / PR head / merge SHA:** ⟨start⟩ / ⟨base⟩ / ⟨head⟩ / ⟨merge⟩  
+**Synchronized main tip:** ⟨origin/main after CLOSEOUT; may be newer than merge SHA⟩  
+**CLOSEOUT status:** ⟨complete / partial-blocked / invalid-precondition⟩
+
+## Landed codeframe
+
+- **Zones/modules:** ⟨3–8 concise bullets⟩
+- **Diff evidence:** ⟨PR files/diff, tech log, or compare URL⟩
+- **Structural effect:** ⟨what changed about the system frame; `none` if local-only⟩
+
+## Plan versus landed
+
+- **Planned:** ⟨blueprint/acceptance summary⟩
+- **Landed:** ⟨actual result⟩
+- **Divergences / deferrals:** ⟨none, or explicit items + disposition⟩
+
+## Same-branch multi-agent reconciliation
+
+- **Contribution manifest:** ⟨agent/session → commits/paths → handoff evidence⟩
+- **Views compared:** ⟨PR base…head, unit-start..head, landed first-parent delta, current branch/worktree⟩
+- **Explained differences + evidence:** ⟨classification plus commit/path/diff link for merge resolution, generated output, intentional omission, superseded or later work⟩
+- **Branch gaps:** ⟨none, or exact unmatched commit/path/change + owner/remediation status⟩
+- **Branch/worktree disposition:** ⟨pruned / preserved + reason⟩
+
+## Anomalies and residuals
+
+- ⟨none, audit note, cleanup surprise, missing evidence, or unresolved blocker⟩
+
+## Doctrine and architecture impact
+
+- **Product-local doctrine:** ⟨updated paths + reason, or `no doctrine change`⟩
+- **Architecture/OOP map:** ⟨updated path/tip, N/A, gap, or unknown⟩
+- **Shared doctrine residual:** ⟨Admin note/link, or none; do not edit cross-project doctrine from a product closeout⟩
+
+## Evidence map
+
+- Overview worklog: ⟨path / gap / waiver⟩
+- Technical worklog: ⟨path / gap / waiver⟩
+- Audit: ⟨path⟩
+- Handoff / unit CLOSEOUT: ⟨path⟩
+- Findings / reports / build log: ⟨links or none⟩
+
+## Primary-main synchronization
+
+- **Outcome:** ⟨complete / partial-blocked / invalid-precondition⟩
+- **Primary path:** ⟨path⟩
+- **Local HEAD / origin/main:** ⟨sha⟩ / ⟨sha or unavailable⟩
+- **Merge ancestry:** ⟨merge SHA is ancestor of origin/main: yes/no⟩
+- **Blocker / waiver:** ⟨none, exact dirt/divergence/no-remote reason, or Admin waiver⟩
+
+## Continue
+
+- **Next unit:** ⟨parked pointer⟩
+- **CP-0:** ⟨do not start until Admin phrase / automation checks PASS⟩

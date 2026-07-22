@@ -1,0 +1,34 @@
+# PROPOSALS — ⟨pool-id⟩
+
+Enhancement / remediation cards for **Admin review**. Do not auto-create WORKSTREAMS rows.
+
+**Status:** `open` · `acked` · `parked` · `promoted-to-WS`
+
+---
+
+## Cards
+
+<!-- Newest first -->
+
+### Template (delete when unused)
+
+```
+### YYYY-MM-DD — ⟨title⟩
+- **Problem:** …
+- **Evidence:** …
+- **Idea:** …
+- **Suggested slice:** ⟨WS/BP title + one-unit scope⟩
+- **Walls:** …
+- **Effort guess:** S | M | L
+- **Risk:** …
+- **Related highlight / digest:** …
+- **Cross-pool?** no | @pool-id …
+- **Status:** open
+- **Promoted as:** _(WS/BP id after Admin)_
+```
+
+Admin promote recipe: `hive/agent-team-pools/PROMOTE-TO-WORKSTREAMS.md`. Do not auto-create WORKSTREAMS rows.
+
+---
+
+_(no proposals yet)_

@@ -1,0 +1,33 @@
+# WORKSTREAMS — ⟨PRODUCT_NAME⟩
+
+**patternVersion:** `0.5.1`  
+**Live queue.** Cursor plans are build specs only; **this file** is what’s open / gated / closed now.
+
+Update on every Seed draft, unit start, preview, merge, and park.  
+Under `automation-eligible`, Orchestrator may append **in-domain** Open rows when CP0-POLICY allows — never expand MASTER-PLAN walls here silently.
+
+---
+
+## Open
+
+| WS / BP | Title | Status | Owner | Notes |
+|---|---|---|---|---|
+| ⟨WS-…⟩ | ⟨…⟩ | open | ⟨…⟩ | ⟨…⟩ |
+
+## Gated / parked
+
+| WS / BP | Why parked | Unblock when |
+|---|---|---|
+| ⟨…⟩ | ⟨…⟩ | Admin says ⟨phrase⟩ **or** automation circumstance PASS (if mode allows) |
+
+## Recently closed
+
+| WS / BP | Merged | Tip SHA | Notes |
+|---|---|---|---|
+| ⟨…⟩ | ⟨PR # / date⟩ | ⟨sha…⟩ | ⟨…⟩ |
+
+---
+
+## Wave / sequence notes
+
+⟨Optional: which fork is next, READY gates, dependencies. Seed fills first wave from Admin idea.⟩
