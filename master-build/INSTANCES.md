@@ -4,6 +4,7 @@
 **Doctrine:** [`MASTER-BUILD-PATTERN.md`](./MASTER-BUILD-PATTERN.md)
 
 Public tip lists **smoke / docs-only** examples only.  
+These are **frozen fixtures** (dated logs are illustrative), not live product ops.  
 Live product registries (paths, private repos, tip SHAs) stay off this public surface — see local `registry/private/` on Admin machines (not published).
 
 | ID | Product / team | Path | patternVersion | Status | Notes |

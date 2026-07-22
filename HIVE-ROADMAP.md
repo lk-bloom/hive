@@ -5,6 +5,8 @@
 **Canonical:** `lk-bloom/hive/HIVE-ROADMAP.md`  
 **Cold-start:** [`ORCHESTRATION.md`](./ORCHESTRATION.md)
 
+**Active vs parked:** **Active** = process docs and operating guidance in this file (and linked hive doctrine). **Parked** = tooling Seeds in §6 / [`registry/PARKED-SEEDS.md`](./registry/PARKED-SEEDS.md) — not built here yet.
+
 This document is the long-horizon vision for the hive system. It does **not** ship daemons. Tooling below is parked as future Seeds.
 
 ---

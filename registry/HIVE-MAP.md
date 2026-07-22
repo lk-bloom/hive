@@ -7,14 +7,14 @@ This public file is a **format example** only. Live product pins, absolute paths
 
 | Product | Build-master pin | Pool pin | Pools | CP-0 mode | Hive paths | Notes |
 |---|---|---|---|---|---|---|
-| _(example)_ | `0.5.1` | `0.2` | n | admin-gated | `hive/` | Fill privately |
+| _(example)_ | `0.5.1` | `0.3` | n | admin-gated | `hive/` | Fill privately |
 
 ## Hive tip (canonical packs)
 
 | Pack | Tip version | Path |
 |---|---|---|
 | Master Build Pattern | `0.5.1` | `master-build/` |
-| Agent Team Pools | `0.2` | `agent-team-pools/` |
+| Agent Team Pools | `0.3` | `agent-team-pools/` |
 | Orchestration bible | active | `ORCHESTRATION.md` |
 | Roadmap | Decided-as-roadmap | `HIVE-ROADMAP.md` |
 

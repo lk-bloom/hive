@@ -6,6 +6,8 @@ Hive is the public pattern home for Lyrikai multiagent ops. We welcome:
 - Bug reports on scaffolds or role-card ambiguity
 - Pattern / doctrine upgrade proposals via [`proposals/`](./proposals/)
 
+Please follow the [`CODE_OF_CONDUCT.md`](./CODE_OF_CONDUCT.md). Security concerns: [`SECURITY.md`](./SECURITY.md).
+
 ## How to propose a change
 
 1. Copy [`proposals/PROPOSAL.template.md`](./proposals/PROPOSAL.template.md) → `proposals/YYYY-MM-DD-<slug>.md`

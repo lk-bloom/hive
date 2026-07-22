@@ -1,5 +1,7 @@
 # Scaffold smoke — docs-only
 
+**Frozen smoke fixture** — dated work-logs here are illustrative examples, not live product ops.
+
 **patternVersion:** `0.2`  
 **Instance ID:** `smoke`  
 **Purpose:** Prove cold adopt of `master-build/scaffold/` **without** reading another product’s build-master — including CLOSEOUT + `workLogsRoot`.
