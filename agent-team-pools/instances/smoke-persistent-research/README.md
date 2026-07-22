@@ -1,8 +1,17 @@
 # Pool smoke — Persistent Research Kit (`smoke-persistent-research`)
 
 **poolPatternVersion:** `0.3`  
-**Status:** smoke — PASS 2026-07-22  
+**Status:** smoke — PASS 2026-07-22 · **CLOSEOUT complete** (public tip)  
 **Purpose:** Prove the opt-in Persistent Research Kit (charter, RUN-LOG, validate script) without a shipping product or model runner.
+
+## Land anchors (public tip)
+
+| Field | Value |
+|---|---|
+| Remote | [lk-bloom/hive](https://github.com/lk-bloom/hive) |
+| PR | [#1](https://github.com/lk-bloom/hive/pull/1) MERGED |
+| Merge SHA | `2e79c38` |
+| CLOSEOUT | [`CLOSEOUT.md`](./CLOSEOUT.md) |
 
 ## Cold-start exercised
 
@@ -21,5 +30,6 @@
 
 ## Result
 
-Kit surfaces for pool pack `0.3` are present under `hive/agent-team-pools/persistent-research/`.  
-Legacy [`../smoke-docs-only`](../smoke-docs-only/) remains pinned at `0.2`.
+Kit surfaces for pool pack `0.3` are on public `main`.  
+Legacy [`../smoke-docs-only`](../smoke-docs-only/) remains pinned at `0.2`.  
+Evidence: [`work-logs/`](./work-logs/) · [`history/`](./history/).
