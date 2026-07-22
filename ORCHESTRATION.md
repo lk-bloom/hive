@@ -2,7 +2,12 @@
 
 **Audience:** every agent · every product · every role · any swarm size  
 **Canonical home:** `lk-bloom/hive/`  
-**Companion packs:** [`master-build/`](./master-build/) · [`agent-team-pools/`](./agent-team-pools/) · [`doctrine/`](./doctrine/)
+**Companion packs:** [`master-build/`](./master-build/) · [`agent-team-pools/`](./agent-team-pools/) · [`doctrine/`](./doctrine/)  
+**Terms:** [`GLOSSARY.md`](./GLOSSARY.md)
+
+### Problem Hive solves
+
+As agent counts grow, coordination debt explodes: tribal knowledge, unclear walls, and invented processes. Hive is one cold-start protocol so every bee can answer where it is, what it may touch, what to read next, and what it must not invent — with the same gates from a one-agent docs unit to a 100-agent program. **Human Admin stays governor**; agents do not grant themselves lock, preview, promote, merge, or cross-hive share.
 
 ---
 
@@ -83,12 +88,43 @@ Hive sits at **ops + instance**: it does not fork the SOP and does not author Op
 
 **Hive never owns** product WORKSTREAMS status or product-specific walls.
 
+```mermaid
+flowchart TB
+  gov[GovernanceSOP_Bloom]
+  hive[HiveSystem]
+  buildOps[BuildOps_MBP]
+  pools[OrgInsight_Pools]
+  codeLaw[CodeLaw_Doctrine]
+  jobBoard[ProductJobBoard]
+  walls[ProductWalls]
+  gov --> hive
+  hive --> buildOps
+  hive --> pools
+  hive --> codeLaw
+  buildOps --> jobBoard
+  pools -->|"Admin_promote_only"| jobBoard
+  jobBoard --> walls
+```
+
 ---
 
 ## 4 · End-to-end loop (ship path)
 
 ```
 Idea → Seed → Admin program lock → PREP / CP-0 → Build → Audit → Preview → PR → CLOSEOUT → Learn
+```
+
+```mermaid
+flowchart LR
+  idea[Idea] --> seed[Seed]
+  seed --> lock[AdminProgramLock]
+  lock --> cp0[PREP_CP0]
+  cp0 --> build[Build]
+  build --> audit[Audit]
+  audit --> preview[AdminPreview]
+  preview --> pr[PR_Merge]
+  pr --> closeout[CLOSEOUT]
+  closeout --> learn[Learn]
 ```
 
 | Stage | Owner | Key surfaces |
@@ -219,6 +255,7 @@ Legacy root paths (`lk-bloom/master-build/`, `lk-bloom/doctrine/`) are **frozen 
 
 | Need | Go |
 |---|---|
+| Glossary | [`GLOSSARY.md`](./GLOSSARY.md) |
 | Unit-loop doctrine | [`master-build/MASTER-BUILD-PATTERN.md`](./master-build/MASTER-BUILD-PATTERN.md) |
 | Pool doctrine | [`agent-team-pools/POOL-PATTERN.md`](./agent-team-pools/POOL-PATTERN.md) |
 | Promote recipe | [`agent-team-pools/PROMOTE-TO-WORKSTREAMS.md`](./agent-team-pools/PROMOTE-TO-WORKSTREAMS.md) |

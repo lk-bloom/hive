@@ -1,6 +1,12 @@
 # OS
 .DS_Store
 
+# Live registries are private-mirror-only (lyrikai-os/lk-bloom).
+# Public tip must never include them — publish via scripts/publish-public-tip.sh
+# which excludes registry/private/**. Parent may track that folder; do not
+# sync it to lk-bloom/hive.
+# (Intentionally not gitignored on the private parent so Admin can version it.)
+
 # Secrets (never commit)
 **/.env*
 !**/.env.example
@@ -15,10 +21,6 @@
 **/build/
 **/dist/
 **/.astro/
-
-# Admin-only live registries (not for public tip)
-registry/private/
-!registry/private/README.md
 
 # Logs / coverage
 **/coverage/
