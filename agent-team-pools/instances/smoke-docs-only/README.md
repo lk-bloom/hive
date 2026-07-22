@@ -1,5 +1,7 @@
 # Pool smoke — docs-only (`smoke-docs-only`)
 
+**Frozen smoke fixture** — dated digests here are illustrative examples, not live product ops.
+
 **poolPatternVersion:** `0.2`  
 **Status:** smoke — PASS 2026-07-22  
 **Purpose:** Prove `hive/agent-team-pools/scaffold/` copies, DIGESTS slot, promote + exchange docs exist without a shipping product.

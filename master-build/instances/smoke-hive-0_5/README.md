@@ -1,5 +1,7 @@
 # MBP smoke — hive tip (`smoke-hive-0_5`)
 
+**Frozen smoke fixture** — dated notes here are illustrative examples, not live product ops.
+
 **patternVersion:** `0.5`  
 **Status:** smoke — PASS 2026-07-22  
 **Purpose:** Prove hive Master Build tip surfaces: Seed/COMPOSER/CP0 docs, CLOSEOUT Brain digest step, without shipping product code.

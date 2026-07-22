@@ -19,10 +19,10 @@ Usage: publish-public-tip.sh [--dry-run] [--apply --target <path-to-lk-bloom-hiv
   --target DIR  Destination clone root (required with --apply).
   --keep-staging  Leave the staging dir (prints path). Default: delete after run.
 
-Excludes: registry/private/**, .DS_Store, .git
-Denies (content scan on staged tree): absolute /Users/ paths (except PUBLICATION deny-list wording),
-  LIVE-BUILD-INSTANCES, LIVE-POOL-INSTANCES, LIVE-HIVE-MAP, registry/private presence,
-  common secret filenames.
+Excludes: registry/private/**, .claude/, .DS_Store, .git
+Denies (content scan on staged tree, including hidden files): absolute /Users/ paths
+  (except PUBLICATION deny-list wording), LIVE-BUILD-INSTANCES, LIVE-POOL-INSTANCES,
+  LIVE-HIVE-MAP, registry/private presence, common secret filenames.
 EOF
 }
 
@@ -53,9 +53,10 @@ cleanup() {
 trap cleanup EXIT
 
 echo "==> Staging from ${HIVE_ROOT}"
-# rsync exclude private live registries and junk
+# rsync exclude private live registries, local agent configs, and junk
 rsync -a \
   --exclude '.git/' \
+  --exclude '.claude/' \
   --exclude '.DS_Store' \
   --exclude 'registry/private/' \
   --exclude 'registry/private' \
@@ -68,6 +69,10 @@ if [[ -d "${STAGING}/registry/private" ]]; then
   echo "FAIL: staging still contains registry/private/" >&2
   fail=1
 fi
+if [[ -d "${STAGING}/.claude" ]]; then
+  echo "FAIL: staging still contains .claude/" >&2
+  fail=1
+fi
 if find "${STAGING}" -type f \( -name '.env' -o -name '.env.*' -o -name '*.pem' -o -name 'credentials.json' \) 2>/dev/null | grep -q .; then
   echo "FAIL: secret-like filenames in staging" >&2
   find "${STAGING}" -type f \( -name '.env' -o -name '.env.*' -o -name '*.pem' -o -name 'credentials.json' \) 2>/dev/null >&2 || true
@@ -76,9 +81,10 @@ fi
 
 echo "==> Content deny scan"
 # Real home paths (/Users/<name>/...), not deny-list ellipsis `/Users/...`
+# Scan hidden files too — local agent configs must not slip through.
 PATH_RE='/Users/[A-Za-z0-9_]'
 if command -v rg >/dev/null 2>&1; then
-  PATH_HITS="$(rg -n "${PATH_RE}" "${STAGING}" || true)"
+  PATH_HITS="$(rg --hidden -n "${PATH_RE}" "${STAGING}" || true)"
   if [[ -n "${PATH_HITS}" ]]; then
     echo "FAIL: absolute /Users/<name> path content in publish candidate" >&2
     echo "${PATH_HITS}" >&2
@@ -139,6 +145,7 @@ fi
 echo "==> Applying rsync → ${TARGET}"
 rsync -a --delete \
   --exclude '.git/' \
+  --exclude '.claude/' \
   --exclude '.DS_Store' \
   --exclude 'registry/private/' \
   "${STAGING}/" "${TARGET}/"

@@ -1,5 +1,7 @@
 # Pool smoke — Persistent Research Kit (`smoke-persistent-research`)
 
+**Frozen smoke fixture** — dated work-logs and history here are illustrative examples, not live product ops.
+
 **poolPatternVersion:** `0.3`  
 **Status:** smoke — PASS 2026-07-22 · **CLOSEOUT complete** (public tip)  
 **Purpose:** Prove the opt-in Persistent Research Kit (charter, RUN-LOG, validate script) without a shipping product or model runner.

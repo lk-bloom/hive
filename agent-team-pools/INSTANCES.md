@@ -4,6 +4,7 @@
 **Doctrine:** [`POOL-PATTERN.md`](./POOL-PATTERN.md)
 
 Public tip lists **smoke / docs-only** examples only.  
+These are **frozen fixtures** (dated logs are illustrative), not live product ops.  
 Live product pool paths stay off this public surface.
 
 | ID | Product / team | Path | poolPatternVersion | Status | Notes |

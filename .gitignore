@@ -1,6 +1,9 @@
 # OS
 .DS_Store
 
+# Local agent / IDE configs (never publish — absolute paths often live here)
+.claude/
+
 # Live registries are private-mirror-only (lyrikai-os/lk-bloom).
 # Public tip must never include them — publish via scripts/publish-public-tip.sh
 # which excludes registry/private/**. Parent may track that folder; do not
