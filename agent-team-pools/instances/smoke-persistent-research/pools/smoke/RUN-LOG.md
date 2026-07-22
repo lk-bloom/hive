@@ -13,3 +13,13 @@ Append-only. Newest entries at the **bottom**.
 - Escalations: none
 - Pause after run?: no
 - Notes: docs-only smoke for pool pack 0.3
+
+## [2026-07-22] lint | public tip CLOSEOUT recorded
+
+- Charter status: admin-locked
+- Mode: lint
+- Iterations used: 0 / max 1
+- Wrote: instance CLOSEOUT.md, work-logs/, history/
+- Escalations: none
+- Pause after run?: no
+- Notes: merge `2e79c38` on lk-bloom/hive#1

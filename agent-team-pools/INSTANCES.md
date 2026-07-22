@@ -9,7 +9,7 @@ Live product pool paths stay off this public surface.
 | ID | Product / team | Path | poolPatternVersion | Status | Notes |
 |---|---|---|---|---|---|
 | **smoke** | pool scaffold smoke (docs-only) | `instances/smoke-docs-only` | `0.2` | smoke — PASS 2026-07-22 | Legacy DIGESTS + promote + exchange; leave pin |
-| **smoke-persistent-research** | Persistent Research Kit smoke (docs-only) | `instances/smoke-persistent-research` | `0.3` | smoke — PASS 2026-07-22 | Charter + check script + RUN-LOG |
+| **smoke-persistent-research** | Persistent Research Kit smoke (docs-only) | `instances/smoke-persistent-research` | `0.3` | smoke — PASS + CLOSEOUT 2026-07-22 | Public tip merge `2e79c38` ([hive#1](https://github.com/lk-bloom/hive/pull/1)); see instance `CLOSEOUT.md` |
 
 ## How to register (private)
 
