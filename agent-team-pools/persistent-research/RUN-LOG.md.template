@@ -1,0 +1,16 @@
+# RUN-LOG — Persistent Research — ⟨pool-id⟩
+
+Append-only. Newest entries at the **bottom**.  
+Prefix each entry so tools can parse: `## [YYYY-MM-DD] <mode> | <one-line>`
+
+---
+
+## [YYYY-MM-DD] ingest | ⟨one-line summary⟩
+
+- Charter status: ⟨active⟩
+- Mode: ingest · query · lint
+- Iterations used: ⟨n⟩ / max ⟨N⟩
+- Wrote: ⟨DIGESTS/… · HIGHLIGHTS · PROPOSALS · INBOX · wiki/… · index⟩
+- Escalations: ⟨none | INBOX row⟩
+- Pause after run?: no
+- Notes: ⟨optional⟩

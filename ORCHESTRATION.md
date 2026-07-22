@@ -156,6 +156,7 @@ REGISTRY → pools/<id> Brain → HIGHLIGHTS / PROPOSALS → INBOX → Admin pro
 | Pool instance | Who watches / what was noticed — **not** a second queue |
 | Promote | **Admin only** — see [`agent-team-pools/PROMOTE-TO-WORKSTREAMS.md`](./agent-team-pools/PROMOTE-TO-WORKSTREAMS.md) |
 | Research | Cursor search tools for routine Brain work; never silent product OpenRouter spend |
+| Opt-in recurrence | Persistent Research Kit — [`agent-team-pools/persistent-research/`](./agent-team-pools/persistent-research/) (charter lock, not CP-0) |
 
 Doctrine: [`agent-team-pools/POOL-PATTERN.md`](./agent-team-pools/POOL-PATTERN.md)
 
@@ -258,6 +259,7 @@ Legacy root paths (`lk-bloom/master-build/`, `lk-bloom/doctrine/`) are **frozen 
 | Glossary | [`GLOSSARY.md`](./GLOSSARY.md) |
 | Unit-loop doctrine | [`master-build/MASTER-BUILD-PATTERN.md`](./master-build/MASTER-BUILD-PATTERN.md) |
 | Pool doctrine | [`agent-team-pools/POOL-PATTERN.md`](./agent-team-pools/POOL-PATTERN.md) |
+| Persistent Research Kit | [`agent-team-pools/persistent-research/`](./agent-team-pools/persistent-research/) |
 | Promote recipe | [`agent-team-pools/PROMOTE-TO-WORKSTREAMS.md`](./agent-team-pools/PROMOTE-TO-WORKSTREAMS.md) |
 | Cross-pool exchange | [`agent-team-pools/IDEA-EXCHANGE.md`](./agent-team-pools/IDEA-EXCHANGE.md) |
 | Hive upgrade inbox | [`proposals/README.md`](./proposals/README.md) |

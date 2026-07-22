@@ -19,6 +19,7 @@ Cite-only. Definitions point at canon — do not invent new meanings here.
 | **Handoff-ready** | Build+audit complete enough for Admin preview — **not** PR-ready | [`ORCHESTRATION.md`](./ORCHESTRATION.md) §6 |
 | **PR-ready** | Preview-approved; Publisher may open PR | same |
 | **MBP / patternVersion** | Master Build Pattern version pin (tip **0.5.1**) | [`master-build/MASTER-BUILD-PATTERN.md`](./master-build/MASTER-BUILD-PATTERN.md) |
-| **poolPatternVersion** | Agent Team Pools pack version pin (tip **0.2**) | [`agent-team-pools/POOL-PATTERN.md`](./agent-team-pools/POOL-PATTERN.md) |
+| **poolPatternVersion** | Agent Team Pools pack version pin (tip **0.3**) | [`agent-team-pools/POOL-PATTERN.md`](./agent-team-pools/POOL-PATTERN.md) |
+| **Persistent Research Kit** | Opt-in recurrence discipline for Brains (charter + validate script; not CP-0 / not a daemon) | [`agent-team-pools/persistent-research/`](./agent-team-pools/persistent-research/) |
 
 **Cold-start:** [`ORCHESTRATION.md`](./ORCHESTRATION.md).
